@@ -63,21 +63,22 @@ void userInput(){
 	int N,a,b;
 	vector<pair<int,int> > t;
 	//for case when all points do not lie on convex hull
-	/*ifstream in;
+	ifstream in;
 	in.open("10000_points.txt");
 	in>>N;
 	for(int i=0;i<N;i++){
 		in>>a>>b;
 		t.push_back(make_pair(a,b));
-	}*/
+	}
 	
 	//for case when all points on convex hull
-	cout<<"Enter input size: ";
+	/*cout<<"Enter input size: ";
 	cin>>N;
 	for(int i=1;i<N;i++){
 		t.push_back(make_pair(i,i));
 	}
-	t.push_back(make_pair(0,1));
+	t.push_back(make_pair(0,1));*/
+	
 	convexHull(t);
 }
 
